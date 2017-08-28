@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+<title>Steam locomotive</title>
+<link href="normalize.css" rel="stylesheet" type="text/css">
+<link href="locomotive.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../../src/b4w.js"></script>
+<script type="text/javascript" src="../../src/anchors.js"></script>
+<script type="text/javascript" src="../../src/animation.js"></script>
+<script type="text/javascript" src="../../src/armature.js"></script>
+<script type="text/javascript" src="../../src/assets.js"></script>
+<script type="text/javascript" src="../../src/batch.js"></script>
+<script type="text/javascript" src="../../src/boundings.js"></script>
+<script type="text/javascript" src="../../src/camera.js"></script>
+<script type="text/javascript" src="../../src/compat.js"></script>
+<script type="text/javascript" src="../../src/config.js"></script>
+<script type="text/javascript" src="../../src/constraints.js"></script>
+<script type="text/javascript" src="../../src/container.js"></script>
+<script type="text/javascript" src="../../src/controls.js"></script>
+<script type="text/javascript" src="../../src/curve.js"></script>
+<script type="text/javascript" src="../../src/data.js"></script>
+<script type="text/javascript" src="../../src/debug.js"></script>
+<script type="text/javascript" src="../../src/extensions.js"></script>
+<script type="text/javascript" src="../../src/geometry.js"></script>
+<script type="text/javascript" src="../../src/graph.js"></script>
+<script type="text/javascript" src="../../src/hud.js"></script>
+<script type="text/javascript" src="../../src/input.js"></script>
+<script type="text/javascript" src="../../src/ipc.js"></script>
+<script type="text/javascript" src="../../src/lights.js"></script>
+<script type="text/javascript" src="../../src/loader.js"></script>
+<script type="text/javascript" src="../../src/logic_nodes.js"></script>
+<script type="text/javascript" src="../../src/main.js"></script>
+<script type="text/javascript" src="../../src/math.js"></script>
+<script type="text/javascript" src="../../src/navmesh.js"></script>
+<script type="text/javascript" src="../../src/nla.js"></script>
+<script type="text/javascript" src="../../src/nodemat.js"></script>
+<script type="text/javascript" src="../../src/obj_util.js"></script>
+<script type="text/javascript" src="../../src/objects.js"></script>
+<script type="text/javascript" src="../../src/particles.js"></script>
+<script type="text/javascript" src="../../src/physics.js"></script>
+<script type="text/javascript" src="../../src/prerender.js"></script>
+<script type="text/javascript" src="../../src/primitives.js"></script>
+<script type="text/javascript" src="../../src/print.js"></script>
+<script type="text/javascript" src="../../src/reformer.js"></script>
+<script type="text/javascript" src="../../src/renderer.js"></script>
+<script type="text/javascript" src="../../src/scenegraph.js"></script>
+<script type="text/javascript" src="../../src/scenes.js"></script>
+<script type="text/javascript" src="../../src/sfx.js"></script>
+<script type="text/javascript" src="../../src/shaders.js"></script>
+<script type="text/javascript" src="../../src/subscene.js"></script>
+<script type="text/javascript" src="../../src/tbn.js"></script>
+<script type="text/javascript" src="../../src/texcomp.js"></script>
+<script type="text/javascript" src="../../src/textures.js"></script>
+<script type="text/javascript" src="../../src/time.js"></script>
+<script type="text/javascript" src="../../src/transform.js"></script>
+<script type="text/javascript" src="../../src/tsr.js"></script>
+<script type="text/javascript" src="../../src/util.js"></script>
+<script type="text/javascript" src="../../src/version.js"></script>
+<script type="text/javascript" src="../../src/libs/gl-matrix2.js"></script>
+<script type="text/javascript" src="../../src/libs/gpp_parser.js"></script>
+<script type="text/javascript" src="../../src/libs/md5.js"></script>
+<script type="text/javascript" src="../../src/libs/pako_inflate.js"></script>
+<script type="text/javascript" src="../../src/ext/anchors.js"></script>
+<script type="text/javascript" src="../../src/ext/animation.js"></script>
+<script type="text/javascript" src="../../src/ext/armature.js"></script>
+<script type="text/javascript" src="../../src/ext/assets.js"></script>
+<script type="text/javascript" src="../../src/ext/camera.js"></script>
+<script type="text/javascript" src="../../src/ext/config.js"></script>
+<script type="text/javascript" src="../../src/ext/constraints.js"></script>
+<script type="text/javascript" src="../../src/ext/container.js"></script>
+<script type="text/javascript" src="../../src/ext/controls.js"></script>
+<script type="text/javascript" src="../../src/ext/data.js"></script>
+<script type="text/javascript" src="../../src/ext/debug.js"></script>
+<script type="text/javascript" src="../../src/ext/geometry.js"></script>
+<script type="text/javascript" src="../../src/ext/hud.js"></script>
+<script type="text/javascript" src="../../src/ext/input.js"></script>
+<script type="text/javascript" src="../../src/ext/lights.js"></script>
+<script type="text/javascript" src="../../src/ext/logic_nodes.js"></script>
+<script type="text/javascript" src="../../src/ext/main.js"></script>
+<script type="text/javascript" src="../../src/ext/material.js"></script>
+<script type="text/javascript" src="../../src/ext/math.js"></script>
+<script type="text/javascript" src="../../src/ext/nla.js"></script>
+<script type="text/javascript" src="../../src/ext/objects.js"></script>
+<script type="text/javascript" src="../../src/ext/particles.js"></script>
+<script type="text/javascript" src="../../src/ext/physics.js"></script>
+<script type="text/javascript" src="../../src/ext/rgb.js"></script>
+<script type="text/javascript" src="../../src/ext/scenes.js"></script>
+<script type="text/javascript" src="../../src/ext/screen.js"></script>
+<script type="text/javascript" src="../../src/ext/sfx.js"></script>
+<script type="text/javascript" src="../../src/ext/textures.js"></script>
+<script type="text/javascript" src="../../src/ext/time.js"></script>
+<script type="text/javascript" src="../../src/ext/transform.js"></script>
+<script type="text/javascript" src="../../src/ext/tsr.js"></script>
+<script type="text/javascript" src="../../src/ext/util.js"></script>
+<script type="text/javascript" src="../../src/ext/version.js"></script>
+<script type="text/javascript" src="../../src/addons/app.js"></script>
+<script type="text/javascript" src="../../src/addons/camera_anim.js"></script>
+<script type="text/javascript" src="../../src/addons/fps.js"></script>
+<script type="text/javascript" src="../../src/addons/gp_conf.js"></script>
+<script type="text/javascript" src="../../src/addons/gyroscope.js"></script>
+<script type="text/javascript" src="../../src/addons/hmd.js"></script>
+<script type="text/javascript" src="../../src/addons/hmd_conf.js"></script>
+<script type="text/javascript" src="../../src/addons/mixer.js"></script>
+<script type="text/javascript" src="../../src/addons/mouse.js"></script>
+<script type="text/javascript" src="../../src/addons/npc_ai.js"></script>
+<script type="text/javascript" src="../../src/addons/preloader.js"></script>
+<script type="text/javascript" src="../../src/addons/screenshooter.js"></script>
+<script type="text/javascript" src="../../src/addons/storage.js"></script>
+<script type="text/javascript" src="../../src/addons/ns_compat.js"></script>
+
+<script src="locomotive.js"></script>
+</head>
+<body>
+  <section>
+    <h1>Locomotive à vapeur</h1>
+    <div id="locomotive_viewer"></div>
+    <div id="boiler.anchor" class="anchor">
+      <h2>La chaudière</h2>
+      <p>La chaudière se compose de la partie postérieure, du corps cylindrique et de la boîte à fumée.</p>
+
+      <ul>
+        <li>La partie postérieure de la chaudière se compose du foyer et de la boîte à feu, reliés par des entretoises.</li>
+
+        <li>Le corps cylindrique renferme les tubes à fumée.</li>
+      </ul>
+
+      <p>Le combustible - charbon, bois ou pétrole - alimente le feu par la porte du foyer, où il brûle sur la grille (pour les combustibles solides). Une alimentation semi-automatique peut se faire par un stoker. Les cendres et mâchefer s'accumulent plus bas dans le cendrier. L'air, nécessaire à la combustion, entre par des clapets situés au niveau de la grille : les registres. La voûte du foyer force la circulation des gaz chauds dans l'ensemble du foyer et limite l'entrée des flammèches dans les tubes. Les gaz résultants de la combustion passent au travers des tubes à fumée, où ils transmettent leur chaleur à l'eau de la chaudière et arrivent à la boîte à fumée, dans laquelle un pare-escarbilles retient les cendres incandescentes, avant d'être expulsés par la cheminée à l'aide de l'échappement des cylindres. Le sommet du foyer (ciel du foyer), porté à haute température, est recouvert par une partie de la chaudière qui doit toujours être alimentée en eau à cet endroit, sinon des fusibles de sûreté fondent et le mélange vapeur/eau est précipité dans le foyer pour l'éteindre.</p>
+      </p>
+    </div>
+    <div id="cabin.anchor" class="anchor">
+      <h2>L'équipe</h2>
+      <p>L'équipe de conduite comporte le chauffeur et le mécanicien. Le premier est chargé de la production de vapeur, de l'alimentation du foyer et de l'alimentation en eau ; l'autre est chargé de la conduite de la machine elle-même, de la surveillance de la voie et des signaux, et de la « tenue de l'heure ». L'équipe se tenait dans l'« abri », face à la « devanture » constituée par la face arrière du foyer, en quelque sorte, le tableau de bord de la machine. Sur certaines machines, la plateforme de conduite peut être distincte de la plateforme du chauffeur (comme sur les Camelback (en)), pour donner une bonne visibilité au mécanicien.</p>
+
+      <p>Jusqu'à l'existence de machines banalisées (comme les 141 R), une équipe reste liée à sa machine, sur une certaine période entre révisions.</p>
+
+      <img src="assets/cabin.jpg" alt="L'intérieur de la cabine de la machine à vapeur.">
+    </div>
+
+    <div id="wheels.anchor" class="anchor">
+      <h2>Vitesse</h2>
+      <p>Le record de vitesse mondial pour un train tracté par une locomotive à vapeur est détenu par une locomotive de la famille des Pacific A4, du LNER, au Royaume-Uni : la Mallard, tractant six voitures et une voiture dynamométrique, à 203 km/h, sur une voie descendant légèrement de Stoke Bank, le 3 juillet 1938. Comme d'autres locomotives (allemandes, américaines ou belge) ne se sont seulement qu'approchées de ce record, il est considéré comme constituant la limite pour un train tracté à la vapeur.</p>
+    </div>
+
+    <div id="distribution.anchor" class="anchor">
+      <h2>Le moteur à vapeur (distribution et entraînement)</h2>
+      <img src="assets/Steam_locomotive_work.gif" alt="Animation du fonctionnement de la machine à vapeur.">
+      <p>L'arrivée et l'échappement de la vapeur, des deux côtés du cylindre, est réglée par le tiroir de distribution (6). Le piston est relié à la crosse qui, par l'intermédiaire de la bielle motrice, transforme le mouvement de va-et-vient en un mouvement circulaire. Ce mouvement est transmis à toutes les roues motrices, grâce aux bielles d'accouplement. Le réglage du tiroir de distribution, pour inverser la marche, s'effectue au moyen du volant de commande de la vis de changement de marche (8), qui se trouve dans la cabine de conduite.<p>
+      <p>Travail de la distribution (exemple de distribution Walschaerts) : c'est par le tiroir (6) que la vapeur est admise dans le cylindre (7) et agit alternativement sur chacune des faces du piston. La tige de piston actionne la bielle couplée au train de roues motrices, par l'intermédiaire de la crosse articulée (5). Les roues couplées deviennent toutes motrices.</p>
+      <p>Par l'intermédiaire de la contre-manivelle (2) calée à 90° de la manivelle motrice, une bielle fait osciller la coulisse (1) de distribution dans laquelle glisse la bielle de commande de tiroir (3). Le déplacement de cette bielle (3), couplée au levier d'avance (4) sur la coulisse, permet de régler le décalage entre les déplacements du tiroir et ceux du piston. On peut ainsi régler le taux d'admission du moteur et également changer de sens.</p>
+    </div>
+
+    <p>Les premières locomotives, au XIXe siècle, sont mues par une machine à vapeur, d'où le nom de locomotives à vapeur. Ce type de moteur thermique est le plus couramment utilisé jusque dans les années 1950 entre autres en Europe, et est toujours employé localement dans certains pays au XXIe siècle.
+    <p>Désormais, la plupart des trains sont cependant tractés par des locomotives électriques ou thermiques (Diesel), ou bien sont constitués par des rames automotrices, ou des autorails, parfois indivisibles, intégrant la motorisation répartie sous les véhicules et/ou à l'intérieur des caisses.</p>
+    <p>Source : <a href="https://fr.wikipedia.org/wiki/Locomotive_%C3%A0_vapeur">Wikipedia</a></p>
+  </section>
+</body>
+</html>

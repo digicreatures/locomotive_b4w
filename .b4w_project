@@ -1,0 +1,27 @@
+[info]
+author = David Gayerie
+icon =
+name = locomotive_b4w
+title = Steam Locomotive
+
+[paths]
+assets_dirs = projects/locomotive_b4w/assets;
+blend_dirs = projects/locomotive_b4w/blender;
+blender_exec = blender
+build_dir = projects/locomotive_b4w/build
+deploy_dir =
+
+[compile]
+apps =
+css_ignore =
+engine_type = copy
+ignore =
+js_ignore =
+optimization = simple
+use_physics = False
+
+[deploy]
+assets_path_dest = assets
+assets_path_prefix = assets
+ignore =
+override =
